@@ -1,86 +1,86 @@
 (() => {
   const products = [
     {
-        "id": "conceito-scooter",
-        "name": "Scooter elétrica · exemplo",
-        "brand": "Ilustrativo",
+        "id": "e-leve-catalogo-01",
+        "name": "Scooter elétrica · opção 01",
+        "brand": "e-Leve",
         "type": "scooter",
-        "use": "Cidade · exemplo visual",
-        "tag": "Ilustrativo",
-        "image": "https://cdn.mediablog.mediapark.uz/corecms/post-thumbnails/01K1JES6SN0XNVFZ01V2CB1S8A.webp",
+        "use": "Foto do catálogo recebido",
+        "tag": "Foto do catálogo",
+        "image": "images/catalogo-e-leve-01.jpg",
         "source": "#colecao",
-        "description": "Imagem demonstrativa para visualizar a organização do catálogo. Não representa produto, versão, especificação ou estoque da loja.",
+        "description": "Foto enviada pela equipe da e-Leve. Nome comercial, versão, autonomia, preço e disponibilidade precisam ser confirmados com a loja.",
         "facts": [
             "A confirmar",
             "A confirmar",
-            "Sob consulta"
+            "A confirmar"
         ],
         "factLabels": [
+            "Modelo",
             "Autonomia",
-            "Versão",
             "Disponibilidade"
         ]
     },
     {
-        "id": "conceito-bike",
-        "name": "E-bike · exemplo",
-        "brand": "Ilustrativo",
-        "type": "bike",
-        "use": "Trajeto · exemplo visual",
-        "tag": "Ilustrativo",
-        "image": "https://monarcbikes.com/cdn/shop/files/Tracer-Superior-Side2.png?v=1782182100&width=1400",
+        "id": "e-leve-catalogo-02",
+        "name": "Scooter elétrica · opção 02",
+        "brand": "e-Leve",
+        "type": "scooter",
+        "use": "Foto do catálogo recebido",
+        "tag": "Foto do catálogo",
+        "image": "images/catalogo-e-leve-02.jpg",
         "source": "#colecao",
-        "description": "Imagem demonstrativa. Produto e disponibilidade precisam ser confirmados com a loja.",
+        "description": "Foto enviada pela equipe da e-Leve. Nome comercial, versão, autonomia, preço e disponibilidade precisam ser confirmados com a loja.",
         "facts": [
             "A confirmar",
             "A confirmar",
-            "Sob consulta"
+            "A confirmar"
         ],
         "factLabels": [
+            "Modelo",
             "Autonomia",
-            "Versão",
             "Disponibilidade"
         ]
     },
     {
-        "id": "conceito-patinete",
-        "name": "Patinete · exemplo",
-        "brand": "Ilustrativo",
-        "type": "patinete",
-        "use": "Último trecho · exemplo",
-        "tag": "Ilustrativo",
-        "image": "https://i05.appmifile.com/467_item_hu/12/08/2025/bec4608a80448b9a4a90929090a60bd7.png?q=85&thumb=1&w=900",
+        "id": "e-leve-catalogo-03",
+        "name": "Scooter elétrica · opção 03",
+        "brand": "e-Leve",
+        "type": "scooter",
+        "use": "Foto do catálogo recebido",
+        "tag": "Foto do catálogo",
+        "image": "images/catalogo-e-leve-03.jpg",
         "source": "#colecao",
-        "description": "Imagem demonstrativa. Não atribui modelo ou ficha à loja.",
+        "description": "Foto enviada pela equipe da e-Leve. Nome comercial, versão, autonomia, preço e disponibilidade precisam ser confirmados com a loja.",
         "facts": [
             "A confirmar",
             "A confirmar",
-            "Sob consulta"
+            "A confirmar"
         ],
         "factLabels": [
+            "Modelo",
             "Autonomia",
-            "Versão",
             "Disponibilidade"
         ]
     },
     {
-        "id": "conceito-triciclo",
-        "name": "Triciclo · exemplo",
-        "brand": "Ilustrativo",
-        "type": "trike",
-        "use": "Conforto · exemplo visual",
-        "tag": "Ilustrativo",
-        "image": "https://www.pashley.co.uk/cdn/shop/products/pashley-alecs-e-cargo-trike-side-view_ba1894c5-6461-44a0-9b64-7422251e629a_1800x.jpg?v=1674642067",
+        "id": "e-leve-catalogo-04",
+        "name": "Scooter elétrica · opção 04",
+        "brand": "e-Leve",
+        "type": "scooter",
+        "use": "Foto do catálogo recebido",
+        "tag": "Foto do catálogo",
+        "image": "images/catalogo-e-leve-04.jpg",
         "source": "#colecao",
-        "description": "Imagem demonstrativa; modelo, especificações, preço e estoque dependem da confirmação da loja.",
+        "description": "Foto enviada pela equipe da e-Leve. Nome comercial, versão, autonomia, preço e disponibilidade precisam ser confirmados com a loja.",
         "facts": [
             "A confirmar",
             "A confirmar",
-            "Sob consulta"
+            "A confirmar"
         ],
         "factLabels": [
+            "Modelo",
             "Autonomia",
-            "Versão",
             "Disponibilidade"
         ]
     }
@@ -111,7 +111,7 @@
   }
   function render() {
     const list = filtered();
-    $('#filterCount').textContent = `${String(list.length).padStart(2, '0')} EXEMPLOS ILUSTRATIVOS`;
+    $('#filterCount').textContent = `${String(list.length).padStart(2, '0')} FOTOS DE CATÁLOGO`;
     catalog.innerHTML = list.length ? list.map(productCard).join('') : '<div class="empty-state">Nenhum veículo encontrado. Tente outro nome ou categoria.</div>';
     $$('[data-add]', catalog).forEach(b => b.onclick = () => add(b.dataset.add));
     $$('[data-detail]', catalog).forEach(b => b.onclick = () => detail(b.dataset.detail));
